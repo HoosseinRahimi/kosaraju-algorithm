@@ -8,7 +8,6 @@ def read(filename):
     # Read the graph from a file and return an adjacency list representation
     with open(filename, "r") as file:
         graphlist = defaultdict(list)
-        edge_count = 0  # Counter for the number of edges
         
         for line in file:
             src, dest = map(int, line.split())
