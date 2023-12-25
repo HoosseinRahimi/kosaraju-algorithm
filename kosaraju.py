@@ -13,10 +13,6 @@ def read(filename):
         for line in file:
             src, dest = map(int, line.split())
             graphlist[src].append(dest)
-            edge_count += 1
-        
-        # Print the number of edges read
-        print(edge_count)
     
     return graphlist
 
